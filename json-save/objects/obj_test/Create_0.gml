@@ -8,12 +8,12 @@ circle_y = room_height/2;
 savefile_save_start();
 savefile_set( "x", circle_x );
 savefile_set( "y", circle_y );
-var _result = savefile_save_end( "test.txt" );
+var _result = savefile_save_end( "test.json" );
     
 if ( _result ) {
     //Show a message in the IDE's output if we've been successful
-    show_debug_message( "Saved succesfully to test.txt" );
+    show_debug_message( "Saved succesfully to test.json" );
 } else {
     //Show a message in the IDE's output if something's gone wrong
-    show_debug_message( "Did not save successfully to test.txt!" );
+    show_debug_message( "Did not save successfully to test.json!" );
 }
