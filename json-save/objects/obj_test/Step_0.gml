@@ -12,14 +12,14 @@ if ( keyboard_check_pressed( ord( "S" ) ) ) {
     savefile_save_start();
     savefile_set( "x", circle_x );
     savefile_set( "y", circle_y );
-    var _result = savefile_save_end( "test.txt" );
+    var _result = savefile_save_end( "test.json" );
     
     if ( _result ) {
         //Show a message in the IDE's output if we've been successful
-        show_debug_message( "Saved succesfully to test.txt" );
+        show_debug_message( "Saved succesfully to test.json" );
     } else {
         //Show a message in the IDE's output if something's gone wrong
-        show_debug_message( "Did not save successfully to test.txt!" );
+        show_debug_message( "Did not save successfully to test.json!" );
     }
     
 }
@@ -29,14 +29,14 @@ if ( keyboard_check_pressed( ord( "S" ) ) ) {
 if ( keyboard_check_pressed( ord( "L" ) ) ) {
     
     //Load a savefile every time we press the L key
-    var _result = savefile_load( "test.txt" );
+    var _result = savefile_load( "test.json" );
     
     if ( _result ) {
         //Show a message in the IDE's output if we've been successful
-        show_debug_message( "Loaded succesfully from test.txt" );
+        show_debug_message( "Loaded succesfully from test.json" );
     } else {
         //Show a message in the IDE's output if something's gone wrong
-        show_debug_message( "Did not load successfully from test.txt!" );
+        show_debug_message( "Did not load successfully from test.json!" );
     }
     
     //...and move the circle too
